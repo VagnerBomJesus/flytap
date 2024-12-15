@@ -1,0 +1,828 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Header Principal */
+.main-header {
+    font-family: Arial, sans-serif;
+}
+
+/* Barra superior */
+.top-bar {
+    background-color: #f9e79f;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.top-bar .view-all {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Navegação Principal */
+.main-nav {
+    background-color: #002855;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.main-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav .logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bfa6;
+}
+
+.nav-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-actions a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.nav-actions a:hover {
+    color: #00bfa6;
+}
+
+/* Banner Principal */
+.hero-banner {
+    background: url('img/banner.jpg') no-repeat center center / cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero-banner .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-banner h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-banner p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-banner .btn-primary {
+    background-color: #00bfa6;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.hero-banner .btn-primary:hover {
+    background-color: #008a72;
+}
+
+/* Formulário de Pesquisa */
+.search-form {
+    background-color: #f7f7f7;
+    padding: 2rem 1rem;
+    margin-top: -2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tabs .tab {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.tabs .tab.active {
+    background-color: #00bfa6;
+    color: #fff;
+}
+
+.tabs .tab:hover {
+    background-color: #008a72;
+    color: #fff;
+}
+
+.flight-search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.form-group input,
+.form-group button {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.875rem;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.form-actions label {
+    font-size: 0.875rem;
+}
+
+.btn-submit {
+    background-color: #00bfa6;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-submit:hover {
+    background-color: #008a72;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero-banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .flight-search {
+        flex-direction: column;
+    }
+}
+
+
+ //////////////////
+ 
+ /* Secção de Ofertas */
+.flight-offers {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.flight-offers .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.section-title .highlight {
+    color: #008000;
+    font-weight: bold;
+}
+
+/* Destaques Principais */
+.main-offers {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.offer-card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.offer-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.offer-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: left;
+}
+
+.offer-info h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.offer-info p {
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
+}
+
+.offer-info .price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Subcategoria */
+.sub-category {
+    margin-bottom: 1.5rem;
+}
+
+.category-btn {
+    background: #fff;
+    color: #008000;
+    border: 2px solid #008000;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+    background: #008000;
+    color: #fff;
+}
+
+/* Ofertas Secundárias */
+.secondary-offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.destination-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.destination-info {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.destination-info h3 {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+}
+
+.destination-info p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.destination-info .price {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #008000;
+}
+
+/* Botão Ver Mais */
+.see-more {
+    text-align: center;
+}
+
+.see-more-btn {
+    background: #008000;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.see-more-btn:hover {
+    background: #006600;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-offers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondary-offers {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+ ////////////////
+
+
+/* Secção de Sugestões */
+.suggestions-section {
+    padding: 2rem 1rem;
+    background-color: #fff;
+}
+
+.suggestions-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Grade de Sugestões */
+.suggestions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    grid-template-rows: auto auto; /* Duas linhas */
+    gap: 1.5rem;
+}
+
+/* Cartões de Sugestão */
+.suggestion-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.suggestion-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem seja ajustada */
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.6); /* Fundo escuro com opacidade */
+    color: #fff;
+}
+
+.card-content h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+    font-weight: bold;
+}
+
+.card-content p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Tamanhos Diferentes */
+.suggestion-card.large {
+    grid-column: span 1;
+    grid-row: span 1;
+    height: 300px;
+}
+
+.suggestion-card.small {
+    grid-column: span 1;
+    grid-row: span 1;
+    height: 200px;
+}
+
+/* Hover para o cartão */
+.suggestion-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+ 
+
+/* S
+ecção de Requisitos de Entrada */
+.entry-requirements-section {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 1500px;
+}
+
+
+.entry-requirements-section .container {
+    width: 1200px; /* Largura máxima para alinhar com o footer */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.icon img {
+    width: 80px;
+    height: auto;
+}
+
+.text {
+    flex: 1;
+    margin-left: 1rem;
+    text-align: left;
+}
+
+.text h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.text p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+.button .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button .btn:hover {
+    background-color: #218838;
+}
+ 
+
+ 
+
+
+/* Secção Star Alliance */
+.star-alliance-section {
+    background-color: #fff;
+    padding: 2rem 0; /* Espaçamento vertical */
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.star-alliance-note {
+    margin-top: 20px; /* Espaçamento acima do conteúdo */
+
+}
+
+.star-alliance-section .container {
+    max-width: 1200px; /* Largura máxima para alinhar com o footer */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.star-alliance-content {
+    display: flex;
+    justify-content: space-between; /* Garante que os elementos ocupem o mesmo nível */
+    align-items: center;
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    width: 100%;
+    gap: 1rem; /* Espaçamento entre os elementos */
+    margin-top: 2rem 1rem; /* Espaçamento acima do conteúdo */
+}
+
+.star-alliance-banner img {
+     width: 1200px; /* Tamanho consistente com as imagens dos selos */
+    height: auto; /* Mantém a proporção */
+    margin: 0 auto;
+    display: block;
+}
+
+.awards {
+    display: flex;
+    justify-content: space-between; /* Espaça uniformemente as imagens */
+    align-items: center;
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    width: 100%; /* Garante que use a largura completa do container */
+    margin: 1.5rem 0; /* Espaçamento entre elementos */
+}
+
+.awards img {
+    width: 50px; /* Tamanho das imagens dos selos */
+    height: auto; /* Mantém a proporção */
+    transition: transform 0.3s;
+}
+
+.awards img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o cursor */
+}
+
+ 
+
+/* Secção acima do footer */
+.pre-footer {
+    background-color: #f8f8f8;
+    padding: 2rem 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.pre-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.pre-footer .column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.pre-footer .column h4 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.pre-footer .column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pre-footer .column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.pre-footer .column ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.pre-footer .column ul li a:hover {
+    color: rgb(8, 129, 3);
+}
+
+.pre-footer .newsletter-link {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: underline;
+    color: rgb(8, 129, 3);
+}
+
+.pre-footer .social-icons a,
+.pre-footer .app-icons a {
+    margin-right: 10px;
+}
+
+.pre-footer .social-icons img,
+.pre-footer img {
+    width: 44px;
+    height: 44px;
+}
+
+.app-icons img {
+    width: 80px; /* Define a largura dos ícones */
+    height: auto; /* Mantém a proporção original */
+    margin-right: 10px; /* Espaçamento entre os ícones */
+    display: inline-block;
+}
+
+.confio-logo {
+    margin-top: 1rem;
+    display: block;
+    width: 100px !important;
+}
+
+/* Footer */
+.footer-minimal {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+}
+
+.footer-minimal-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite o conteúdo se reorganizar em telas menores */
+    gap: 2rem;
+}
+
+.footer-minimal p {
+    margin: 0;
+    padding: 0;
+    color: #555;
+}
+
+.footer-minimal img {
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .pre-footer-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-minimal-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .star-alliance-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .star-alliance-banner img {
+        max-width: 150px; /* Ajusta o tamanho para telas menores */
+    }
+
+    .awards img {
+        width: 40px; /* Reduz o tamanho das imagens em telas menores */
+        gap: 1rem; /* Espaçamento entre imagens */
+
+    }
+
+    .entry-requirements-section .container {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .button {
+        margin-top: 1rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .card-content h3 {
+        font-size: 1rem;
+    }
+
+    .card-content p {
+        font-size: 0.875rem;
+    }
+    .suggestions-grid {
+        grid-template-columns: 1fr; /* Uma coluna em dispositivos menores */
+        gap: 1rem;
+    }
+
+    .suggestion-card.large,
+    .suggestion-card.small {
+        height: auto;
+    }
+
+
+    .main-offers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondary-offers {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .offer-card img {
+        height: 150px;
+    }
+
+    .offer-card .offer-content {
+        padding: 0.5rem;
+    }
+
+    .offer-card .offer-content h3 {
+        font-size: 1rem;
+    }
+
+    .offer-card .offer-content p,
+    .offer-card .offer-content .price {
+        font-size: 0.875rem;
+    }
+
+
+    .destination-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .destination-card img {
+        height: 100px;
+    }
+
+    .destination-content h3 {
+        font-size: 0.875rem;
+    }
+
+    .destination-content p,
+    .destination-content .price {
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAP Air Portugal</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <main>
+        <!-- Header -->
+        <header class="main-header">
+            <!-- Barra superior -->
+            <div class="top-bar">
+                <div class="container">
+                    <p>⚠️ Aviso: esquema de phishing</p>
+                    <a href="#" class="view-all">Ver tudo</a>
+                </div>
+            </div>
+        
+            <!-- Navegação principal -->
+            <nav class="main-nav">
+                <div class="container">
+                    <a href="#" class="logo">
+                        <img src="img/logo-tap.png" alt="TAP Air Portugal">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="#">Viajar</a></li>
+                        <li><a href="#">Gerir reserva</a></li>
+                        <li><a href="#">Check-in</a></li>
+                        <li><a href="#">Antes da partida</a></li>
+                        <li><a href="#">TAP Miles&Go</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <a href="#" class="language">🇵🇹 PT</a>
+                        <a href="#" class="login">Login e Registo</a>
+                        <a href="#" class="search-icon">🔍</a>
+                    </div>
+                </div>
+            </nav>
+        
+            <!-- Secção principal do cabeçalho -->
+            <div class="hero-banner">
+                <div class="container">
+                    <div class="banner-content">
+                        <h1>Abrace a nova rota: Porto-Boston</h1>
+                        <p>A partir de maio 2025, Porto-Boston com 4 voos diretos semanais.</p>
+                        <a href="#" class="btn-primary">Reserve já</a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Formulário de pesquisa -->
+            <div class="search-form">
+                <div class="container">
+                    <div class="tabs">
+                        <button class="tab active">Reservar um voo</button>
+                        <button class="tab">As minhas viagens</button>
+                        <button class="tab">Check-in</button>
+                        <button class="tab">Estado do voo</button>
+                    </div>
+                    <form class="flight-search">
+                        <div class="form-group">
+                            <label for="from">De</label>
+                            <input type="text" id="from" value="LIS, Lisboa, Portugal">
+                        </div>
+                        <div class="form-group">
+                            <label for="to">Para onde?</label>
+                            <input type="text" id="to" placeholder="Digite o destino">
+                        </div>
+                        <div class="form-group">
+                            <label for="dates">Selecionar datas</label>
+                            <button type="button" class="btn-date">Selecionar datas</button>
+                        </div>
+                        <div class="form-actions">
+                            <label><input type="checkbox"> Mostrar todas as datas e melhores ofertas</label>
+                            <button type="submit" class="btn-submit">Pesquisar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+        
+         
+
+        <section class="flight-offers">
+            <div class="container">
+                <!-- Título da Secção -->
+                <h2 class="section-title">As melhores ofertas de voos a partir de <span class="highlight">Lisboa</span></h2>
+        
+                <!-- Destaques Principais -->
+                <div class="main-offers">
+                    <div class="offer-card">
+                        <img src="img/premios-tap-airline-raitings.svg" alt="Praia">
+                        <div class="offer-info">
+                            <h3>Praia</h3>
+                            <p>Ida e volta</p>
+                            <span class="price">Desde 312€</span>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <img src="img/pinterest.svg" alt="Fortaleza">
+                        <div class="offer-info">
+                            <h3>Fortaleza</h3>
+                            <p>Ida e volta</p>
+                            <span class="price">Desde 722€</span>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <img src="img/pinterest.svg" alt="Terceira">
+                        <div class="offer-info">
+                            <h3>Terceira</h3>
+                            <p>Ida e volta</p>
+                            <span class="price">Desde 78€</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Subcategoria -->
+                <div class="sub-category">
+                    <button class="category-btn">Europa e Médio Oriente <span>&#x25BC;</span></button>
+                </div>
+        
+                <!-- Ofertas Secundárias -->
+                <div class="secondary-offers">
+                    <div class="destination-card">
+                        <img src="img/premios-tap-airline-raitings.svg" alt="Faro">
+                        <div class="destination-info">
+                            <h3>Faro</h3>
+                            <p>Ida</p>
+                            <span class="price">Desde 34€</span>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="img/premios-tap-airline-raitings.svg" alt="Funchal">
+                        <div class="destination-info">
+                            <h3>Funchal</h3>
+                            <p>Ida</p>
+                            <span class="price">Desde 38€</span>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="img/premios-tap-airline-raitings.svg" alt="Porto">
+                        <div class="destination-info">
+                            <h3>Porto</h3>
+                            <p>Ida</p>
+                            <span class="price">Desde 46€</span>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="img/premios-tap-airline-raitings.svg" alt="Madrid">
+                        <div class="destination-info">
+                            <h3>Madrid</h3>
+                            <p>Ida</p>
+                            <span class="price">Desde 47€</span>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="img/premios-tap-airline-raitings.svg" alt="Barcelona">
+                        <div class="destination-info">
+                            <h3>Barcelona</h3>
+                            <p>Ida</p>
+                            <span class="price">Desde 48€</span>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="img/pinterest.svg" alt="Paris">
+                        <div class="destination-info">
+                            <h3>Paris</h3>
+                            <p>Ida</p>
+                            <span class="price">Desde 54€</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Botão "Ver mais" -->
+                <div class="see-more">
+                    <button class="see-more-btn">Ver mais</button>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section class="suggestions-section">
+            <div class="container">
+                <!-- Título da secção -->
+                <h2 class="section-title">Sugestões e informações úteis para viajantes</h2>
+        
+                <!-- Grade de Sugestões -->
+                <div class="suggestions-grid">
+                    <!-- Imagem 1 (Grande) -->
+                    <div class="suggestion-card large">
+                        <img src="img/booking-information-big.svg" alt="Descubra os novos menus da Classe Executiva">
+                        <div class="card-content">
+                            <h3>Descubra os novos menus da Classe Executiva</h3>
+                            <p>Os ingredientes locais são as nossas estrelas!</p>
+                        </div>
+                    </div>
+        
+                    <!-- Imagem 2 (Grande) -->
+                    <div class="suggestion-card large">
+                        <img src="img/app-store-badge-us-uk.svg" alt="Obrigado, obrigado!">
+                        <div class="card-content">
+                            <h3>Obrigado, obrigado!</h3>
+                            <p>Obtivemos uma dupla distinção nos World Travel Awards 2024.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Imagem 3 (Pequena) -->
+                    <div class="suggestion-card small">
+                        <img src="img/app-store-badge-us-uk.svg" alt="Para pôr nos sapatinhos que correm o mundo">
+                        <div class="card-content">
+                            <h3>Para pôr nos sapatinhos que correm o mundo</h3>
+                            <p>Descubra a nossa seleção de Natal da TAP Store.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Imagem 4 (Pequena) -->
+                    <div class="suggestion-card small">
+                        <img src="img/selo-4-star-COVID-19-airline.svg" alt="Dê um Boost à sua viagem em Económica!">
+                        <div class="card-content">
+                            <h3>Dê um Boost à sua viagem em Económica!</h3>
+                            <p>Aproveite o conforto extra! Licite o novo serviço Extra Legroom.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="entry-requirements-section">
+            <div class="container">
+                <div class="content">
+                    <!-- Ícone/Imagem -->
+                    <div class="icon">
+                        <img src="img/booking-information-big.svg" alt="Ícone de restrições de entrada">
+                    </div>
+                    
+                    <!-- Texto -->
+                    <div class="text">
+                        <h3>Restrições e requisitos de entrada por país</h3>
+                        <p>Veja as restrições de entrada e requisitos de viagem para países ao redor do mundo.</p>
+                    </div>
+                    
+                    <!-- Botão -->
+                    <div class="button">
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+
+        <!-- Secção alliance -->
+        <section class="star-alliance-section">
+            <div class="container">
+
+                <div class="star-alliance-banner">
+                    <img src="img/star-alliance-banner.jpeg" alt="Star Alliance Banner">
+                </div>
+                <p class="star-alliance-note">
+                    Ao clicar neste link será direcionado para uma página de internet externa ao flyTAP, cuja
+                    acessibilidade e segurança não são controladas pela TAP Air Portugal.
+                </p>
+                <div class="awards">
+                    <img src="img/selo-4-star-COVID-19-airline.svg" alt="Skytrax Award">
+                    <img src="img/premios-tap-10best2020-best-economy-class-europe.svg" alt="Customer Choice Award">
+                    <img src="img/tap-awards-four-star-global-2022-footer-60px-v2.svg" alt="Frequent Traveler Awards">
+                    <img src="img/premios-tap-european_debt_deal.svg" alt="Airline Ratings">
+                    <img src="img/premios-tap-ftawards-logo.svg" alt="Prêmio Melhores Destinos">
+                    <img src="img/premios-tap-ftawards-logo.svg" alt="4 Star Airline">
+                    <img src="img/premios-tap-melhores-destinos.svg" alt="Prêmio Melhores Destinos">
+                    <img src="img/logo-sigla-wta-2023.svg" alt="4 Star Airline">
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <!-- Secção acima do footer -->
+        <section class="pre-footer">
+            <div class="pre-footer-container">
+                <div class="column">
+                    <h4>Links úteis</h4>
+                    <ul>
+                        <li><a href="#">Check-in online</a></li>
+                        <li><a href="#">Gestão da reserva</a></li>
+                        <li><a href="#">Informação de voos</a></li>
+                        <li><a href="#">Contactos</a></li>
+                        <li><a href="#">Atrasos e cancelamentos</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                    <img src="img/complaint_book.svg" alt="Confio logo" class="confio-logo">
+                    <img src="img/confio-horizontal-cinza.svg" alt="Confio logo" class="confio-logo">
+                </div>
+                <div class="column">
+                    <h4>Outros recursos importantes</h4>
+                    <ul>
+                        <li><a href="#">Condições de transporte</a></li>
+                        <li><a href="#">Condições do Cliente TAP</a></li>
+                        <li><a href="#">Informação legal</a></li>
+                        <li><a href="#">Política de revelação de vulnerabilidades</a></li>
+                        <li><a href="#">Sobre acessibilidade</a></li>
+                        <li><a href="#">Termos e condições TAP Miles&Go</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                        <li><a href="#">Lista de transportadoras aéreas proibidas na União Europeia</a></li>
+                    </ul>
+                    <a href="#" class="newsletter-link">Definições de cookies</a>
+                </div>
+                <div class="column">
+                    <h4>Destinos em destaque</h4>
+                    <ul>
+                        <li><a href="#">Voos Lisboa</a></li>
+                        <li><a href="#">Voos Porto</a></li>
+                        <li><a href="#">Voos Paris</a></li>
+                        <li><a href="#">Voos Londres</a></li>
+                        <li><a href="#">Voos Brasil</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Newsletter</h4>
+                    <p>Subscreva a newsletter TAP e receba todas as ofertas, promoções e novidades na sua caixa de
+                        correio.</p>
+                    <a href="#" class="newsletter-link">Registe-se</a>
+                    <p><strong>Telefone:</strong> (+351) 211234400 <em>Chamada para rede fixa nacional. O custo das
+                            comunicações depende do tarifário acordado com o seu operador.</em></p>
+                </div>
+                <div class="column">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="img/youtube.svg" alt="YouTube"></a>
+                        <a href="#"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+                        <a href="#"><img src="img/tiktok-footer-flytap.svg" alt="TikTok"></a>
+                    </div>
+                    <div class="app-icons">
+                        <a href="#"><img src="img/google-play-badge-us-uk.svg" alt="Google Play"></a>
+                        <a href="#"><img src="img/app-store-badge-us-uk.svg" alt="App Store"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer-minimal">
+            <div class="footer-minimal-container">
+                <p>© 2024, TAP. Todos os direitos reservados.</p>
+                <p><img src="img/star-alliance-flytap-footer-logo-black-187x21.webp" alt="Star Alliance Logo"></p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/logica.js"></script>
+</body>
+
+</html>
